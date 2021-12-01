@@ -1,0 +1,647 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <title>Kirana Clone</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="fixed-top" style="position: sticky;">
+        <!-- navbar Starts-->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+
+                <div class="col col-lg-3">
+                    <!-- logo -->
+                    <div class="d-inline logo">
+                        <img src="kirana.jpg" alt="logo" style="max-height: 58px; max-width: 58px;">
+                    </div>
+                    <div class="d-inline title" style="padding-top: 15px;">
+                        <a class="navbar-brand text-white fs-4" href="./index.htm">किराना</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="col col-lg-6 mt-sm-3">
+                        <input class="form-control " type="search" placeholder="Search for products or categories"
+                            aria-label="Search">
+                    </div>
+                    <div class="col col-lg-3 mt-sm-3 d-flex align-items-center ms-4 float-sm-end float-end">
+                        <div class="order-now text-white pe-3" style="border-right: 2px solid white;">
+                            <div class="d-md-block">
+                                <i class="fa fa-mobile"></i> <small>ORDER AT</small>
+                            </div>
+                            <div class="d-md-block">
+                                <small>01-4511000</small>
+                            </div>
+                        </div>
+                        <div class="sign-in text-white">
+                            <a class="nav-link text-white" href="#"><i class="fa fa-shopping-cart"></i> Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!-- navbar starts -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown ">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Grocery</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Baby Care
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  
+
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Bakery & Diary
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Beverage
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Eggs & Meats
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Household Items
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Kitchen & Pet Food
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Packaged Foods
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Personal Care
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Vegetables & Fruits
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Baby Diapers</a>
+                  <a class="dropdown-item" href="#">Baby Food</a>
+                  <a class="dropdown-item" href="#">Baby Safery</a>
+                  <a class="dropdown-item" href="#">Baby Toys</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+
+                </div>
+              </li>
+
+
+
+            </ul>
+
+          
+        </div>
+        </div>
+      </nav>
+    </div>
+
+<!-- product details -->
+<div class="container ms-5 mt-3">
+    <div class="row">
+        <div class="col col-lg-6">
+            <!-- product img -->
+            <img src="aquaglow.jpeg" alt="">
+        </div>
+        <div class="col col-lg-6">
+            <!-- product info -->
+
+            <!-- product title -->
+            <h4 class="fw-normal">
+                Aqua Glow Hydrating Sunscreen Gel with Himalayan Thermal Water and Hyaluronic Acid, 50 gm
+            </h4>
+            <div class="h4 fw-normal">
+                8906087776413
+            </div>
+            <!-- price -->
+            <div class="h3">NRs. 547
+                <!-- old price -->
+                <span class="h6 fw-normal" style="text-decoration: line-through;">NRs. 610
+                </span>
+            </div>
+
+            <!-- product description -->
+            <ul class="fw-light text-capitalize fs-6">
+                <li class="fw-light">PROTECTION AGAINST UV A & B RAYS: Shield your skin from harmful UV A & B rays
+                    all
+                    day, every day! SPF 50 PA++++ protection is 16 times more powerful to protect you from the sun.
+                    Results? No sun damage, no pigmentation, and no tanning.</li>
+                <li>PROVIDES BLUE LIGHT PROTECTION: A sunscreen that goes above and beyond. Protect your skin from
+                    blue
+                    light emitted from electronic screens with Aqua Glow Hydrating Sunscreen Gel. Hello, younger,
+                    clearer, and hydrated.</li>
+                <li>ULTRA-LIGHT & HYDRATING FORMULA: Protects and hydrates - that’s Aqua Glow Sunscreen Gel for you.
+                    Light as a feather, the gel-based formula doesn't leave a white cast or feel heavy on the skin.
+                    And
+                    it does it all while giving you the ultimate boost of hydration.</li>
+                <li>GOODNESS OF HIMALYAN THERMAL WATER: Rich in minerals like Magnesium, Potassium & Calcium,
+                    Himalayan
+                    Thermal Water is nature’s answer to maintain the skin’s protective barrier, keep it super
+                    hydrated
+                    and youthful.</li>
+                <li>SUITABLE FOR ALL SKIN TYPES: This hydrating sunscreen gel is dermatologically tested & is
+                    suitable
+                    for all skin types.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-6 ms-auto">
+            <div class="row">
+                <div class="col">
+                    <div class="row col col-6 input-group mb-3">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                style="width: 30px; border-radius: 50% 0 0 50%">-
+                            </button>
+                            <input type="text" class="form-control" placeholder=""
+                                aria-label="Example text with button addon" value="1"
+                                aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                style="width: 35px;  border-radius: 0 50% 50% 0">+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100" style="border-radius: 0%;">
+                        <button class="btn btn-danger">Add to Shopping List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Similar product cards -->
+<div class="container col col-12 my-3">
+    <div class="d-inline info text-uppercase text-secondary fw-bold" style="font-size: 14px;">Similar Products</div>
+    <a class="d-inline view all nav-link text-uppercase text-danger ms-3" style="font-size: 13px;" href="#">View
+        all</a>
+</div>
+<div class="container carousel carousel-dark slide d-flex justify-content-center">
+    <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <!-- product card -->
+                        <div class="card mb-3" style="width: 250px;">
+                            <a href="product.html"><img src="sunflower.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text fw-normal">Fortune Sunflower Oil, 1 Ltr Bottle</p>
+                                <p class=" fw-normal" style="margin-bottom: -2px;">NRs.<span
+                                        class="fw-bold">410</span></p>
+                                <p class="previous price" style="text-decoration: line-through; ">NRs.450</p>
+
+                                <div class="row input-group mb-3">
+                                    <p class="col col-3 fw-normal" style="margin-bottom: -2px;">Qty
+                                    </p>
+                                    <div class="col col-9 d-flex justify-content-row ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                            style="width: 30px; border-radius: 50% 0 0 50%">-
+                                        </button>
+                                        <input type="text" class="form-control" placeholder=""
+                                            aria-label="Example text with button addon" value="1"
+                                            aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                            style="width: 35px;  border-radius: 0 50% 50% 0">+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger w-100" style="border-radius: 0%;">Add to
+                                shoping list</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <!-- product card -->
+                        <div class="card mb-3" style="width: 250px;">
+                            <a href="product.html"><img src="sunflower.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text  fw-normal">Fortune Sunflower Oil, 1 Ltr Bottle</p>
+                                <p class=" fw-normal" style="margin-bottom: -2px;">NRs.<span
+                                        class="fw-bold">410</span></p>
+                                <p class="previous price" style="text-decoration: line-through; ">NRs.450</p>
+
+                                <div class="row input-group mb-3">
+                                    <p class="col col-3 fw-normal" style="margin-bottom: -2px;">Qty
+                                    </p>
+                                    <div class="col col-9 d-flex justify-content-row ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                            style="width: 30px; border-radius: 50% 0 0 50%">-
+                                        </button>
+                                        <input type="text" class="form-control" placeholder=""
+                                            aria-label="Example text with button addon" value="1"
+                                            aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                            style="width: 35px;  border-radius: 0 50% 50% 0">+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger w-100" style="border-radius: 0%;">Add to
+                                shoping list</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <!-- product card -->
+                        <div class="card mb-3" style="width: 250px;">
+                            <a href="product.html"><img src="sunflower.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text  fw-normal">Fortune Sunflower Oil, 1 Ltr Bottle</p>
+                                <p class=" fw-normal" style="margin-bottom: -2px;">NRs.<span
+                                        class="fw-bold">410</span></p>
+                                <p class="previous price" style="text-decoration: line-through; ">NRs.450</p>
+
+                                <div class="row input-group mb-3">
+                                    <p class="col col-3 fw-normal" style="margin-bottom: -2px;">Qty
+                                    </p>
+                                    <div class="col col-9 d-flex justify-content-row ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                            style="width: 30px; border-radius: 50% 0 0 50%">-
+                                        </button>
+                                        <input type="text" class="form-control" placeholder=""
+                                            aria-label="Example text with button addon" value="1"
+                                            aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                            style="width: 35px;  border-radius: 0 50% 50% 0">+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger w-100" style="border-radius: 0%;">Add to
+                                shoping list</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <!-- product card -->
+                        <div class="card mb-3" style="width: 250px;">
+                            <a href="product.html"><img src="sunflower.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text  fw-normal">Fortune Sunflower Oil, 1 Ltr Bottle</p>
+                                <p class=" fw-normal" style="margin-bottom: -2px;">NRs.<span
+                                        class="fw-bold">410</span></p>
+                                <p class="previous price" style="text-decoration: line-through; ">NRs.450</p>
+
+                                <div class="row input-group mb-3">
+                                    <p class="col col-3 fw-normal" style="margin-bottom: -2px;">Qty
+                                    </p>
+                                    <div class="col col-9 d-flex justify-content-row ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                            style="width: 30px; border-radius: 50% 0 0 50%">-
+                                        </button>
+                                        <input type="text" class="form-control" placeholder=""
+                                            aria-label="Example text with button addon" value="1"
+                                            aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                            style="width: 35px;  border-radius: 0 50% 50% 0">+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger w-100" style="border-radius: 0%;">Add to
+                                shoping list</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <!-- product card -->
+                        <div class="card mb-3" style="width: 250px;">
+                            <a href="product.html"><img src="sunflower.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text  fw-normal">Fortune Sunflower Oil, 1 Ltr Bottle</p>
+                                <p class=" fw-normal" style="margin-bottom: -2px;">NRs.<span
+                                        class="fw-bold">410</span></p>
+                                <p class="previous price" style="text-decoration: line-through; ">NRs.450</p>
+
+                                <div class="row input-group mb-3">
+                                    <p class="col col-3 fw-normal" style="margin-bottom: -2px;">Qty
+                                    </p>
+                                    <div class="col col-9 d-flex justify-content-row ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                            style="width: 30px; border-radius: 50% 0 0 50%">-
+                                        </button>
+                                        <input type="text" class="form-control" placeholder=""
+                                            aria-label="Example text with button addon" value="1"
+                                            aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                            style="width: 35px;  border-radius: 0 50% 50% 0">+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger w-100" style="border-radius: 0%;">Add to
+                                shoping list</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <!-- product card -->
+                        <div class="card mb-3" style="width: 250px;">
+                            <a href="product.html"><img src="sunflower.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text  fw-normal">Fortune Sunflower Oil, 1 Ltr Bottle</p>
+                                <p class=" fw-normal" style="margin-bottom: -2px;">NRs.<span
+                                        class="fw-bold">410</span></p>
+                                <p class="previous price" style="text-decoration: line-through; ">NRs.450</p>
+
+                                <div class="row input-group mb-3">
+                                    <p class="col col-3 fw-normal" style="margin-bottom: -2px;">Qty
+                                    </p>
+                                    <div class="col col-9 d-flex justify-content-row ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                            style="width: 30px; border-radius: 50% 0 0 50%">-
+                                        </button>
+                                        <input type="text" class="form-control" placeholder=""
+                                            aria-label="Example text with button addon" value="1"
+                                            aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                            style="width: 35px;  border-radius: 0 50% 50% 0">+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger w-100" style="border-radius: 0%;">Add to
+                                shoping list</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <!-- product card -->
+                        <div class="card mb-3" style="width: 250px;">
+                            <a href="product.html"><img src="sunflower.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text  fw-normal">Fortune Sunflower Oil, 1 Ltr Bottle</p>
+                                <p class=" fw-normal" style="margin-bottom: -2px;">NRs.<span
+                                        class="fw-bold">410</span></p>
+                                <p class="previous price" style="text-decoration: line-through; ">NRs.450</p>
+
+                                <div class="row input-group mb-3">
+                                    <p class="col col-3 fw-normal" style="margin-bottom: -2px;">Qty
+                                    </p>
+                                    <div class="col col-9 d-flex justify-content-row ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                            style="width: 30px; border-radius: 50% 0 0 50%">-
+                                        </button>
+                                        <input type="text" class="form-control" placeholder=""
+                                            aria-label="Example text with button addon" value="1"
+                                            aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                            style="width: 35px;  border-radius: 0 50% 50% 0">+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger w-100" style="border-radius: 0%;">Add to
+                                shoping list</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <!-- product card -->
+                        <div class="card mb-3" style="width: 250px;">
+                            <a href="product.html"><img src="sunflower.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text  fw-normal">Fortune Sunflower Oil, 1 Ltr Bottle</p>
+                                <p class=" fw-normal" style="margin-bottom: -2px;">NRs.<span
+                                        class="fw-bold">410</span></p>
+                                <p class="previous price" style="text-decoration: line-through; ">NRs.450</p>
+
+                                <div class="row input-group mb-3">
+                                    <p class="col col-3 fw-normal" style="margin-bottom: -2px;">Qty
+                                    </p>
+                                    <div class="col col-9 d-flex justify-content-row ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"
+                                            style="width: 30px; border-radius: 50% 0 0 50%">-
+                                        </button>
+                                        <input type="text" class="form-control" placeholder=""
+                                            aria-label="Example text with button addon" value="1"
+                                            aria-describedby="button-addon1" style="width: 40px; border-radius: 0">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                            style="width: 35px;  border-radius: 0 50% 50% 0">+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger w-100" style="border-radius: 0%;">Add to
+                                shoping list</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev d-flex" type="button" data-bs-target="#carouselExampleControls1"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon d-flex" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-flex" type="button" data-bs-target="#carouselExampleControls1"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon d-flex" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="container">
+    <footer class="py-5">
+        <div class="row">
+            <div class="col col-lg-2 col-md-4 col-6">
+                <div class="d-inline-flex logo">
+                    <img src="kirana.jpg" alt="logo" style="max-height: 20px; max-width: 20px;">
+                    <h5 class="ms-2">किराना</h5>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">How to Order</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="col col-lg-2 col-md-4 col-6">
+                <h5>LISTS</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Create My List</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">How to use Lists?</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Recommended</a></li>
+                </ul>
+            </div>
+
+            <div class="col col-lg-2 col-md-4 col-6">
+                <h5>DOWNLOADS</h5>
+                <ul class="nav flex-column">
+                  <a href=""><img src="playstore.png" style="width: 120px;"></a>
+                  <a href=""><img src="appstore.png" style="width: 120px;"></a>
+                </ul>
+            </div>
+
+            <div class="col col-lg-2 col-md-4 col-6">
+                <h5>TERMS & POLICIES</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms of service</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shipping Policy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Return Policy</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Statement</a></li>
+                </ul>
+            </div>
+            <div class="col col-lg-2 col-md-4 col-6 mt-4">
+                <ul class="nav flex-column">
+                  <a href=""><img src="verify.png" style="width: 120px;"></a>
+                    
+                </ul>
+            </div>
+            <!-- social media links -->
+            <div class="col col-lg-2 col-md-4 col-6">
+                <h5 class="d-flex">STAY IN TOUCH</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                                class="fa fa-twitter"></i></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                                class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center border-top">
+            <p>&copy; 2021 merokirana.com, All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
+
